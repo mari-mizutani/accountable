@@ -214,7 +214,7 @@ th {
 --------------------------------------------------------------*/
 h1, h2, h3, h4, h5, h6 {
   clear: both;
-  color: #24292e;
+  color:#28004B;
   font-weight: 600;
   margin-top: 24px;
   margin-bottom: 15px;
@@ -222,7 +222,6 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 32px;
   padding-bottom: 10px;
-  color:#28004B;
 }
 h2 {
   font-size: 24px;
@@ -244,9 +243,27 @@ h5 {
 
 p {
   margin-bottom: 1.5em;
-}
+  font-family: 'Assistant';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 175%;
+  /* or 35px */
+  color:#28004B;
+  letter-spacing: 0.01em;
+  }
 h1.entry-title {
-  font-size: 1.31rem;
+  /* Heading / Heading 3 */
+  font-family: 'Avenir Next';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 137%;
+  /* or 66px */
+
+  text-align: center;
+  letter-spacing: -0.005em;
+  color: #28004B;
 }
 h2.entry-title {
   font-size: 2.5rem;
@@ -761,6 +778,78 @@ a img.aligncenter {
 
 .entry-title > a {
   color: inherit;
+}
+
+/*--------------------------------------------------------------
+## Sticky banner
+--------------------------------------------------------------*/
+@media (min-width: 769px){
+.sticky-banner{
+  position: fixed;
+  top:50%;
+  right: 3vw;
+  width: 315px;
+  align-items: flex-start;
+  gap: 10px;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 149px rgba(40, 0, 75, 0.12);
+  border-radius: 20px;
+}
+}
+@media (max-width: 769px){
+  .sticky-banner{
+    display: none;
+  }
+}
+.sticky-banner h5{
+  font-family: 'Avenir Next';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  color: #351A4D;
+}
+.sticky-banner p{
+  font-family: 'Avenir Next';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  color: #351A4D;
+}
+.sticky-banner .btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  width: 194px;
+  height: 42px; 
+  border: 1px solid #6D4AD3;
+  border-radius: 100px;
+  color: #8059C8;
+  flex: none;
+}
+.sticky-banner img{
+  position: absolute;
+  width: 99px;
+  height: 150.61px;
+  top:60%;
+  right:1vw;
+}
+
+/*--------------------------------------------------------------
+# Static content on single.php
+--------------------------------------------------------------*/
+.static{
+  background: radial-gradient(63.37% 115.51% at 40.63% 138.29%, #D7B7FF 0%, rgba(215, 183, 255, 0) 100%) , 
+  radial-gradient(56.94% 103.8% at -12.33% 125.63%, #F2B6E6 0%, rgba(242, 182, 230, 0) 100%) , 
+  radial-gradient(73.96% 134.81% at 107.81% -57.59%, #82A5FF 0%, rgba(130, 165, 255, 0) 100%), 
+  linear-gradient(107.26deg, #A33AB1 0%, rgba(163, 58, 177, 0) 76.62%), #6D4AD3;
+  opacity: 0.06;
+  border-radius: 23px;
 }
 
 /*--------------------------------------------------------------

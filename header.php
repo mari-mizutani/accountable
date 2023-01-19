@@ -78,7 +78,7 @@
             </nav>
         </div>
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header text-center">
+	<div class="entry-header text-center">
 		<?php
 		if ( is_single() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -90,12 +90,12 @@
 
 		<?php
 		endif; ?>
-	</header><!-- .entry-header -->
-	<div class="post-thumbnail text-center">
+	</div><!-- .entry-header -->
+	<div class="post-thumbnail text-center m-5">
 		<?php the_post_thumbnail(); ?>
 	</div>
 	</div>
-<!-- .entry-content -->
+    <!-- .post-thumbnail -->
 	</header><!-- #masthead -->
 	<div id="content" class="site-content">
 		<div class="container">
