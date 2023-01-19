@@ -216,8 +216,9 @@ h1, h2, h3, h4, h5, h6 {
   clear: both;
   color:#28004B;
   font-weight: 600;
-  margin-top: 24px;
+  margin-top: 15px;
   margin-bottom: 15px;
+  opacity: 0.8;
 }
 h1 {
   font-size: 32px;
@@ -251,6 +252,7 @@ p {
   /* or 35px */
   color:#28004B;
   letter-spacing: 0.01em;
+  opacity: 0.8;
   }
 h1.entry-title {
   /* Heading / Heading 3 */
@@ -786,7 +788,7 @@ a img.aligncenter {
 @media (min-width: 769px){
 .sticky-banner{
   position: fixed;
-  top:50%;
+  top:30%;
   right: 3vw;
   width: 315px;
   align-items: flex-start;
@@ -835,23 +837,40 @@ a img.aligncenter {
 .sticky-banner img{
   position: absolute;
   width: 99px;
-  height: 150.61px;
-  top:60%;
-  right:1vw;
+  top:70%;
+  right:3%;
 }
 
 /*--------------------------------------------------------------
 # Static content on single.php
 --------------------------------------------------------------*/
 .static{
+  position: relative;
+	max-width: 100%;
+	width: 100%;
+  height: 100%;
+}
+.static::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+  height: 100%;
   background: radial-gradient(63.37% 115.51% at 40.63% 138.29%, #D7B7FF 0%, rgba(215, 183, 255, 0) 100%) , 
   radial-gradient(56.94% 103.8% at -12.33% 125.63%, #F2B6E6 0%, rgba(242, 182, 230, 0) 100%) , 
   radial-gradient(73.96% 134.81% at 107.81% -57.59%, #82A5FF 0%, rgba(130, 165, 255, 0) 100%), 
   linear-gradient(107.26deg, #A33AB1 0%, rgba(163, 58, 177, 0) 76.62%), #6D4AD3;
-  opacity: 0.06;
   border-radius: 23px;
+  padding:40px;
+  opacity: 0.06;
 }
-
+.static .card-title{
+  color: #28004B;
+  opacity: 0.8;
+  font-weight: bolder;
+  font-size: 20px;
+}
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/

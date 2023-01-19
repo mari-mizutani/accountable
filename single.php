@@ -53,10 +53,10 @@ get_header(); ?>
 
 	<div class="static col-sm-12 col-md-12 col-lg-8 mx-auto">
 		<div class="card-body">
-			<h5 class="card-title">Vous voulez avoir à l’oeil votre revenu annuel ? </h5>
+			<h3 class="card-title">Vous voulez avoir à l’oeil votre revenu annuel ? </h3>
 			<p class="card-text">Téléchargez Accountable. Dans l’écran “Taxes” vous verrez votre revenu annuel toujours à jour. Vous ne serez pas surpris par le premier euro qui passe la barre de la franchise TVA !</p>
 		</div>
-	</div>
+	</div><!-- .static -->
 
 	<div class="sticky-banner">
 		<div class="card-body">
@@ -64,7 +64,7 @@ get_header(); ?>
 			<p class="card-text">Ajoutez vos factures, l’appli prépare vos déclarations sans erreur. Ne stressez plus jamais pour vos impôts.</p>
 			<a href="#" class="btn">Essayez maintenant</a>
 		</div>
-		<img src="<?php echo get_template_directory_uri(); ?>/asset/220929_Illustration_Set_Scenery_Items_v31.png">
+		<img src="<?php echo get_template_directory_uri(); ?>/asset/smartphone.png">
 	</div><!-- .sticky-banner  -->
 
 <?php
